@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hotsite",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/carlosrestom/Claude_projects/B2Content/hotsite"],
+      "port": 3000
+    }
+  ]
+}
