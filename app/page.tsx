@@ -5,6 +5,7 @@ import Results from "@/components/Results";
 import Process from "@/components/Process";
 import Methodology from "@/components/Methodology";
 import Cases from "@/components/Cases";
+import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <Process />
         <Methodology />
         <Cases />
+        <Partners />
         <Testimonials />
         <CTA />
       </main>
