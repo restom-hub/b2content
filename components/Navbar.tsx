@@ -171,7 +171,7 @@ export default function Navbar() {
                 <span style={{ color: "#f5f5f5" }}>content</span>
               </div>
               <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.06em", lineHeight: 1 }}>
-                GROWTH MARKETING B2B
+                IA QUE OPERA. PROCESSOS QUE ESCALAM.
               </div>
             </div>
           </a>

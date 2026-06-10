@@ -63,7 +63,7 @@ export default function Hero() {
             }}
           />
           <span style={{ fontSize: 12, fontWeight: 600, color: "var(--accent)", letterSpacing: "0.04em" }}>
-            GROWTH MARKETING B2B
+            AUTOMAÇÃO COM IA
           </span>
         </div>
 
@@ -79,9 +79,9 @@ export default function Hero() {
             marginBottom: 28,
           }}
         >
-          Conteúdo que{" "}
-          <span style={{ color: "var(--accent)", display: "inline-block" }}>converte</span>
-          {" "}em receita.
+          IA que{" "}
+          <span style={{ color: "var(--accent)", display: "inline-block" }}>opera.</span>
+          <br />Processos que escalam.
         </h1>
 
         {/* Subheadline */}
@@ -95,8 +95,8 @@ export default function Hero() {
             fontWeight: 400,
           }}
         >
-          Aceleramos empresas B2B com estratégia de conteúdo orientada a dados.
-          Mais tráfego qualificado, mais pipeline, mais receita.
+          Automatizamos qualquer processo — de workflows internos a agentes de IA
+          integrados aos seus sistemas. Qualquer segmento. Qualquer operação.
         </p>
 
         {/* CTAs */}

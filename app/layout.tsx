@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "B2Content — Growth Marketing que gera resultado",
+  title: "B2Content — IA que opera. Processos que escalam.",
   description:
-    "Aceleramos o crescimento de empresas B2B com estratégia de conteúdo, SEO e inbound marketing orientado a dados. Mais pipeline, mais receita.",
+    "Automatizamos qualquer processo com IA — de workflows internos a agentes integrados aos seus sistemas. Qualquer segmento, qualquer operação.",
   openGraph: {
-    title: "B2Content — Growth Marketing que gera resultado",
+    title: "B2Content — IA que opera. Processos que escalam.",
     description:
-      "Aceleramos o crescimento de empresas B2B com estratégia de conteúdo, SEO e inbound marketing orientado a dados.",
+      "Automatizamos qualquer processo com IA — de workflows internos a agentes integrados aos seus sistemas.",
     url: "https://b2content.com",
     siteName: "B2Content",
     locale: "pt_BR",
