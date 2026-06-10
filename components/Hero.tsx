@@ -157,32 +157,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats strip */}
-        <div
-          style={{
-            display: "flex",
-            gap: 48,
-            marginTop: 48,
-            paddingTop: 32,
-            borderTop: "1px solid var(--border)",
-            flexWrap: "wrap",
-          }}
-        >
-          {[
-            { value: "3.2×", label: "Crescimento médio de tráfego orgânico" },
-            { value: "180+", label: "Empresas B2B aceleradas" },
-            { value: "68%", label: "Redução média no custo por lead" },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <div style={{ fontSize: 36, fontWeight: 800, color: "var(--foreground)", letterSpacing: "-0.04em", lineHeight: 1 }}>
-                {stat.value}
-              </div>
-              <div style={{ fontSize: 13, color: "var(--muted)", marginTop: 6, maxWidth: 180, lineHeight: 1.4 }}>
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

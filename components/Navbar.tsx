@@ -260,34 +260,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* CTA */}
-          <div className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <a
-              href="#automação"
-              style={{
-                background: "#00e676",
-                color: "#0a0a0a",
-                padding: "9px 20px",
-                borderRadius: 8,
-                fontSize: 13,
-                fontWeight: 700,
-                textDecoration: "none",
-                letterSpacing: "-0.01em",
-                transition: "opacity 0.2s, transform 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.opacity = "0.88";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.opacity = "1";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-              }}
-            >
-              Falar com especialista
-            </a>
-          </div>
-
           {/* Mobile hamburger */}
           <button
             className="nav-mobile-btn"
