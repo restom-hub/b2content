@@ -163,12 +163,14 @@ export default function Automation() {
             >
               <div
                 style={{
-                  fontSize: 11,
-                  fontWeight: 700,
-                  color: "#00e676",
-                  letterSpacing: "0.12em",
+                  fontSize: 52,
+                  fontWeight: 800,
+                  color: "rgba(0,230,118,0.18)",
+                  letterSpacing: "-0.04em",
+                  lineHeight: 1,
                   marginBottom: 20,
                   fontVariantNumeric: "tabular-nums",
+                  userSelect: "none",
                 }}
               >
                 {p.number}

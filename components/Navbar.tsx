@@ -166,12 +166,12 @@ export default function Navbar() {
           <a href="#" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}>
             <Logo size={32} />
             <div>
-              <div style={{ fontWeight: 800, fontSize: 19, letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+              <div style={{ fontWeight: 800, fontSize: 23, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
                 <span style={{ color: "#00e676" }}>b2</span>
                 <span style={{ color: "#f5f5f5" }}>content</span>
               </div>
-              <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.06em", lineHeight: 1 }}>
-                IA QUE OPERA. PROCESSOS QUE ESCALAM.
+              <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.05em", lineHeight: 1 }}>
+                IA que opera. Processos que escalam.
               </div>
             </div>
           </a>

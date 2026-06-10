@@ -7,7 +7,6 @@ import Process from "@/components/Process";
 import Methodology from "@/components/Methodology";
 import Cases from "@/components/Cases";
 import Partners from "@/components/Partners";
-import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         <Methodology />
         <Cases />
         <Partners />
-        <Testimonials />
       </main>
       <Footer />
     </>

@@ -59,12 +59,12 @@ export default function Footer() {
           <a href="#" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
             <Logo size={28} />
             <div>
-              <div style={{ fontWeight: 800, fontSize: 16, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
+              <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
                 <span style={{ color: "#00e676" }}>b2</span>
                 <span style={{ color: "#f5f5f5" }}>content</span>
               </div>
-              <div style={{ fontSize: 10, color: "#444", letterSpacing: "0.06em" }}>
-                IA QUE OPERA. PROCESSOS QUE ESCALAM.
+              <div style={{ fontSize: 10, color: "#444", letterSpacing: "0.05em" }}>
+                IA que opera. Processos que escalam.
               </div>
             </div>
           </a>
