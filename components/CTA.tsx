@@ -64,7 +64,7 @@ export default function CTA() {
           <div
             style={{
               background: "var(--accent-dim)",
-              border: "1px solid rgba(0,230,118,0.25)",
+              border: "1px solid rgba(52,211,153,0.25)",
               borderRadius: 12,
               padding: "32px",
               textAlign: "center",
@@ -111,7 +111,7 @@ export default function CTA() {
                     color: "var(--foreground)",
                     outline: "none",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "rgba(0,230,118,0.4)")}
+                  onFocus={(e) => (e.target.style.borderColor = "rgba(52,211,153,0.4)")}
                   onBlur={(e) => (e.target.style.borderColor = "var(--border)")}
                 />
               </div>
@@ -133,7 +133,7 @@ export default function CTA() {
                     color: "var(--foreground)",
                     outline: "none",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "rgba(0,230,118,0.4)")}
+                  onFocus={(e) => (e.target.style.borderColor = "rgba(52,211,153,0.4)")}
                   onBlur={(e) => (e.target.style.borderColor = "var(--border)")}
                 />
               </div>
@@ -157,7 +157,7 @@ export default function CTA() {
                   color: "var(--foreground)",
                   outline: "none",
                 }}
-                onFocus={(e) => (e.target.style.borderColor = "rgba(0,230,118,0.4)")}
+                onFocus={(e) => (e.target.style.borderColor = "rgba(52,211,153,0.4)")}
                 onBlur={(e) => (e.target.style.borderColor = "var(--border)")}
               />
             </div>
@@ -180,7 +180,7 @@ export default function CTA() {
                   appearance: "none",
                   cursor: "pointer",
                 }}
-                onFocus={(e) => (e.target.style.borderColor = "rgba(0,230,118,0.4)")}
+                onFocus={(e) => (e.target.style.borderColor = "rgba(52,211,153,0.4)")}
                 onBlur={(e) => (e.target.style.borderColor = "var(--border)")}
               >
                 <option value="">Selecione...</option>

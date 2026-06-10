@@ -40,7 +40,7 @@ export default function Partners() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: `linear-gradient(rgba(0,230,118,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(0,230,118,0.015) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(52,211,153,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(52,211,153,0.015) 1px, transparent 1px)`,
           backgroundSize: "80px 80px",
           maskImage: "radial-gradient(ellipse 70% 80% at 80% 50%, black 20%, transparent 100%)",
           pointerEvents: "none",
@@ -53,7 +53,7 @@ export default function Partners() {
 
           {/* Coluna esquerda — sticky editorial */}
           <div style={{ position: "sticky", top: 100 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#00e676", letterSpacing: "0.12em", marginBottom: 20, textTransform: "uppercase" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 20, textTransform: "uppercase" }}>
               Parceria estratégica
             </div>
 
@@ -74,14 +74,14 @@ export default function Partners() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  color: "#00e676",
+                  color: "#34d399",
                   textDecoration: "none",
-                  borderBottom: "1px solid rgba(0,230,118,0.3)",
+                  borderBottom: "1px solid rgba(52,211,153,0.3)",
                   paddingBottom: 2,
                   transition: "border-color 0.2s",
                 }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#00e676")}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "rgba(0,230,118,0.3)")}
+                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "#34d399")}
+                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "rgba(52,211,153,0.3)")}
               >
                 Quick Solutions AI
               </a>
@@ -93,14 +93,14 @@ export default function Partners() {
 
             <div
               style={{
-                background: "rgba(0,230,118,0.06)",
-                border: "1px solid rgba(0,230,118,0.15)",
+                background: "rgba(52,211,153,0.06)",
+                border: "1px solid rgba(52,211,153,0.15)",
                 borderRadius: 10,
                 padding: "16px 20px",
                 marginBottom: 32,
               }}
             >
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#00e676", letterSpacing: "0.08em", marginBottom: 8 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.08em", marginBottom: 8 }}>
                 SOBRE A PARCERIA
               </div>
               <p style={{ fontSize: 13, color: "#888", lineHeight: 1.6 }}>
@@ -118,7 +118,7 @@ export default function Partners() {
                 gap: 8,
                 fontSize: 13,
                 fontWeight: 600,
-                color: "#00e676",
+                color: "#34d399",
                 textDecoration: "none",
                 transition: "gap 0.2s",
               }}

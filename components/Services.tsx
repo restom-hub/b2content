@@ -78,7 +78,7 @@ export default function Services() {
         {/* Header — assimétrico intencionalmente */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, marginBottom: 72, alignItems: "end" }}>
           <div>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#00e676", letterSpacing: "0.12em", marginBottom: 20, textTransform: "uppercase" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 20, textTransform: "uppercase" }}>
               O que fazemos
             </div>
             <h2
@@ -141,12 +141,12 @@ export default function Services() {
                   width: 40,
                   height: 40,
                   borderRadius: 10,
-                  background: "rgba(0,230,118,0.08)",
-                  border: "1px solid rgba(0,230,118,0.15)",
+                  background: "rgba(52,211,153,0.08)",
+                  border: "1px solid rgba(52,211,153,0.15)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#00e676",
+                  color: "#34d399",
                   marginBottom: 20,
                   flexShrink: 0,
                 }}

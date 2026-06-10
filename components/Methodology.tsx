@@ -148,7 +148,7 @@ function StepCard({ title, desc, align }: { title: string; desc: string; align: 
         textAlign: align,
         transition: "border-color 0.2s",
       }}
-      onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "rgba(0,230,118,0.25)")}
+      onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "rgba(52,211,153,0.25)")}
       onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "var(--border)")}
     >
       <h3

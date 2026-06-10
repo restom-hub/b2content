@@ -76,7 +76,7 @@ export default function Testimonials() {
                     height: 40,
                     borderRadius: "50%",
                     background: "var(--accent-dim)",
-                    border: "1px solid rgba(0,230,118,0.2)",
+                    border: "1px solid rgba(52,211,153,0.2)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

@@ -84,9 +84,9 @@ function Dropdown({ items, onClose }: { items: SubmenuItem[]; onClose: () => voi
               style={{
                 fontSize: 10,
                 fontWeight: 700,
-                color: "#00e676",
-                background: "rgba(0,230,118,0.1)",
-                border: "1px solid rgba(0,230,118,0.2)",
+                color: "#34d399",
+                background: "rgba(52,211,153,0.1)",
+                border: "1px solid rgba(52,211,153,0.2)",
                 borderRadius: 4,
                 padding: "2px 7px",
                 letterSpacing: "0.04em",
@@ -167,7 +167,7 @@ export default function Navbar() {
             <Logo size={32} />
             <div>
               <div style={{ fontWeight: 800, fontSize: 23, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-                <span style={{ color: "#00e676" }}>b2</span>
+                <span style={{ color: "#34d399" }}>b2</span>
                 <span style={{ color: "#f5f5f5" }}>content</span>
               </div>
               <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.05em", lineHeight: 1 }}>
@@ -250,7 +250,7 @@ export default function Navbar() {
                 borderRadius: 8,
                 transition: "color 0.15s",
               }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#00e676")}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#34d399")}
               onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#888")}
             >
               Parceiros
@@ -335,7 +335,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               style={{
                 display: "block",
-                background: "#00e676",
+                background: "#34d399",
                 color: "#0a0a0a",
                 padding: "14px 20px",
                 borderRadius: 8,

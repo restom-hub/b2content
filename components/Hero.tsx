@@ -47,7 +47,7 @@ export default function Hero() {
             alignItems: "center",
             gap: 8,
             background: "var(--accent-dim)",
-            border: "1px solid rgba(0,230,118,0.2)",
+            border: "1px solid rgba(52,211,153,0.2)",
             borderRadius: 100,
             padding: "6px 14px",
             marginBottom: 32,

@@ -1,4 +1,4 @@
-export default function Logo({ size = 36, color = "#00e676" }: { size?: number; color?: string }) {
+export default function Logo({ size = 36, color = "#34d399" }: { size?: number; color?: string }) {
   // The icon is two chevrons (> and <) meeting at the center.
   // Left chevron opens wide on the left, narrows to a point at center-right.
   // Right chevron opens wide on the right, narrows to a point at center-left.

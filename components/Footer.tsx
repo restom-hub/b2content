@@ -60,7 +60,7 @@ export default function Footer() {
             <Logo size={28} />
             <div>
               <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-                <span style={{ color: "#00e676" }}>b2</span>
+                <span style={{ color: "#34d399" }}>b2</span>
                 <span style={{ color: "#f5f5f5" }}>content</span>
               </div>
               <div style={{ fontSize: 10, color: "#444", letterSpacing: "0.05em" }}>
@@ -81,21 +81,21 @@ export default function Footer() {
               display: "inline-flex",
               alignItems: "center",
               gap: 8,
-              background: "rgba(0,230,118,0.06)",
-              border: "1px solid rgba(0,230,118,0.14)",
+              background: "rgba(52,211,153,0.06)",
+              border: "1px solid rgba(52,211,153,0.14)",
               borderRadius: 8,
               padding: "10px 14px",
               textDecoration: "none",
               transition: "background 0.2s",
             }}
-            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(0,230,118,0.1)")}
-            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(0,230,118,0.06)")}
+            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(52,211,153,0.1)")}
+            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "rgba(52,211,153,0.06)")}
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M7 1l1.8 3.6 4 .6-2.9 2.8.7 4L7 10.1 3.4 12l.7-4L1.2 5.2l4-.6L7 1z" stroke="#00e676" strokeWidth="1.2" strokeLinejoin="round"/>
+              <path d="M7 1l1.8 3.6 4 .6-2.9 2.8.7 4L7 10.1 3.4 12l.7-4L1.2 5.2l4-.6L7 1z" stroke="#34d399" strokeWidth="1.2" strokeLinejoin="round"/>
             </svg>
             <div>
-              <div style={{ fontSize: 10, fontWeight: 700, color: "#00e676", letterSpacing: "0.06em" }}>PARCEIRO OFICIAL</div>
+              <div style={{ fontSize: 10, fontWeight: 700, color: "#34d399", letterSpacing: "0.06em" }}>PARCEIRO OFICIAL</div>
               <div style={{ fontSize: 11, color: "#888" }}>Quick Solutions AI</div>
             </div>
           </a>
@@ -167,7 +167,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#333", textDecoration: "none", transition: "color 0.15s" }}
-            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#00e676")}
+            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#34d399")}
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#333")}
           >
             Parceiro: Quick Solutions AI

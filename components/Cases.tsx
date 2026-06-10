@@ -71,9 +71,9 @@ const cases = [
     partner: "Quick Solutions AI",
   },
   {
-    color: "#00e676",
-    colorDim: "rgba(0,230,118,0.08)",
-    colorBorder: "rgba(0,230,118,0.2)",
+    color: "#34d399",
+    colorDim: "rgba(52,211,153,0.08)",
+    colorBorder: "rgba(52,211,153,0.2)",
     badge: "Parceria B2Content",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -110,7 +110,7 @@ export default function Cases() {
 
         {/* Header */}
         <div style={{ marginBottom: 64 }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#00e676", letterSpacing: "0.12em", marginBottom: 16, textTransform: "uppercase" }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 16, textTransform: "uppercase" }}>
             Cases
           </div>
           <h2
@@ -272,7 +272,7 @@ export default function Cases() {
                     alignItems: "center",
                     gap: 6,
                     background: c.color,
-                    color: c.color === "#00e676" ? "#0a0a0a" : "#fff",
+                    color: c.color === "#34d399" ? "#0a0a0a" : "#fff",
                     padding: "10px 18px",
                     borderRadius: 8,
                     fontSize: 13,

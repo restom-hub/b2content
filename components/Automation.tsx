@@ -103,7 +103,7 @@ export default function Automation() {
           right: 0,
           width: 480,
           height: 480,
-          background: "radial-gradient(ellipse at top right, rgba(0,230,118,0.06) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at top right, rgba(52,211,153,0.06) 0%, transparent 70%)",
           pointerEvents: "none",
         }}
       />
@@ -113,10 +113,10 @@ export default function Automation() {
         {/* Cabeçalho */}
         <div style={{ maxWidth: 720, marginBottom: 80 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, color: "#00e676", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", textTransform: "uppercase" }}>
               Automação com IA
             </span>
-            <span style={{ width: 1, height: 14, background: "rgba(0,230,118,0.3)" }} />
+            <span style={{ width: 1, height: 14, background: "rgba(52,211,153,0.3)" }} />
             <span style={{ fontSize: 11, color: "#555", letterSpacing: "0.04em" }}>
               em parceria com Quick Solutions AI
             </span>
@@ -165,7 +165,7 @@ export default function Automation() {
                 style={{
                   fontSize: 52,
                   fontWeight: 800,
-                  color: "rgba(0,230,118,0.18)",
+                  color: "rgba(52,211,153,0.18)",
                   letterSpacing: "-0.04em",
                   lineHeight: 1,
                   marginBottom: 20,
@@ -230,12 +230,12 @@ export default function Automation() {
                     width: 36,
                     height: 36,
                     borderRadius: 8,
-                    background: "rgba(0,230,118,0.07)",
-                    border: "1px solid rgba(0,230,118,0.12)",
+                    background: "rgba(52,211,153,0.07)",
+                    border: "1px solid rgba(52,211,153,0.12)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#00e676",
+                    color: "#34d399",
                     flexShrink: 0,
                   }}
                 >
@@ -271,7 +271,7 @@ export default function Automation() {
               style={{
                 fontSize: 12,
                 fontWeight: 600,
-                color: "#00e676",
+                color: "#34d399",
                 textDecoration: "none",
                 display: "inline-flex",
                 alignItems: "center",
