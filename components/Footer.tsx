@@ -21,7 +21,7 @@ const footerNav = [
       { label: "Resultados", href: "#resultados" },
       { label: "Cases", href: "#cases" },
       { label: "Parceiros", href: "#parceiros" },
-      { label: "Diagnóstico gratuito", href: "#contato" },
+      { label: "Automação com IA", href: "#automação" },
     ],
   },
   {

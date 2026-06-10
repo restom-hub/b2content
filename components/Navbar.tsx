@@ -20,9 +20,9 @@ const navItems = [
     label: "Projetos",
     href: "#cases",
     submenu: [
-      { label: "IA Aplicada ao Conteúdo", desc: "Em parceria com Quick Solutions AI", href: "#cases", badge: "Parceria" },
-      { label: "Arquitetura de Dados de Marketing", desc: "Em parceria com Quick Solutions AI", href: "#cases", badge: "Parceria" },
-      { label: "Transformação Digital B2B", desc: "Modernização de presença digital", href: "#cases" },
+      { label: "Automação de Processos com IA", desc: "Em parceria com Quick Solutions AI", href: "#automação", badge: "Parceria" },
+      { label: "Arquitetura de Dados de Marketing", desc: "Em parceria com Quick Solutions AI", href: "#automação", badge: "Parceria" },
+      { label: "Transformação Digital B2B", desc: "Modernização de presença digital", href: "#automação" },
       { label: "Cases de Resultado", desc: "Resultados reais de clientes reais", href: "#cases" },
     ],
   },
@@ -263,7 +263,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <a
-              href="#contato"
+              href="#automação"
               style={{
                 background: "#00e676",
                 color: "#0a0a0a",
@@ -359,7 +359,7 @@ export default function Navbar() {
               </div>
             ))}
             <a
-              href="#contato"
+              href="#automação"
               onClick={() => setOpen(false)}
               style={{
                 display: "block",

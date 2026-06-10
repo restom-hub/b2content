@@ -102,7 +102,7 @@ export default function Hero() {
         {/* CTAs */}
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "center" }}>
           <a
-            href="#contato"
+            href="#cases"
             style={{
               background: "var(--accent)",
               color: "var(--ink)",
@@ -126,13 +126,13 @@ export default function Hero() {
               (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
             }}
           >
-            Diagnóstico gratuito
+            Ver cases
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
           <a
-            href="#cases"
+            href="#automação"
             style={{
               color: "var(--secondary)",
               padding: "16px 24px",
@@ -153,7 +153,7 @@ export default function Hero() {
               (e.currentTarget as HTMLElement).style.color = "var(--secondary)";
             }}
           >
-            Ver cases
+            Automação com IA
           </a>
         </div>
 
