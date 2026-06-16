@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 import Methodology from "@/components/Methodology";
 import Automation from "@/components/Automation";
 import Results from "@/components/Results";
@@ -15,7 +14,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
         <Methodology />
         <Process />
         <Automation />
