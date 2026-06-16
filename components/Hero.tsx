@@ -39,7 +39,7 @@ export default function Hero() {
         }}
       />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%", position: "relative" }}>
+      <div style={{ maxWidth: 800, margin: "0 auto", width: "100%", position: "relative" }}>
         {/* Badge */}
         <div
           style={{
@@ -75,7 +75,6 @@ export default function Hero() {
             letterSpacing: "-0.04em",
             lineHeight: 1.0,
             color: "var(--foreground)",
-            maxWidth: 900,
             marginBottom: 28,
           }}
         >
@@ -89,7 +88,6 @@ export default function Hero() {
           style={{
             fontSize: "clamp(16px, 2vw, 20px)",
             color: "var(--muted)",
-            maxWidth: 560,
             lineHeight: 1.6,
             marginBottom: 48,
             fontWeight: 400,
