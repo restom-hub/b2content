@@ -217,23 +217,9 @@ export default function Cases() {
                 </div>
               </div>
 
-              {/* Nome + tagline — só mostra para B2Content */}
+              {/* Tagline apenas */}
               <div>
-                {c.partner === "B2Content" && (
-                  <h3
-                    style={{
-                      fontSize: 22,
-                      fontWeight: 800,
-                      color: "#f0f0f0",
-                      letterSpacing: "-0.035em",
-                      lineHeight: 1.15,
-                      marginBottom: 8,
-                    }}
-                  >
-                    {c.name}
-                  </h3>
-                )}
-                <p style={{ fontSize: 13.5, fontWeight: 600, color: c.color, lineHeight: 1.4 }}>
+                <p style={{ fontSize: 16, fontWeight: 700, color: c.color, lineHeight: 1.4 }}>
                   {c.tagline}
                 </p>
               </div>
