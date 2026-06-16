@@ -3,7 +3,7 @@ export default function WhatWeDo() {
     <section style={{ padding: "96px 24px 64px", marginTop: "48px", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 28, textTransform: "uppercase" }}>
-          O que fazemos
+          Nosso Modelo de Arquitetura
         </div>
 
         <h2

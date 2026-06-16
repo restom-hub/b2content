@@ -217,27 +217,29 @@ export default function Cases() {
                 </div>
               </div>
 
-              {/* Nome + tagline */}
+              {/* Nome + tagline — só mostra para B2Content */}
               <div>
-                <h3
-                  style={{
-                    fontSize: 22,
-                    fontWeight: 800,
-                    color: "#f0f0f0",
-                    letterSpacing: "-0.035em",
-                    lineHeight: 1.15,
-                    marginBottom: 8,
-                  }}
-                >
-                  {c.name}
-                </h3>
+                {c.partner === "B2Content" && (
+                  <h3
+                    style={{
+                      fontSize: 22,
+                      fontWeight: 800,
+                      color: "#f0f0f0",
+                      letterSpacing: "-0.035em",
+                      lineHeight: 1.15,
+                      marginBottom: 8,
+                    }}
+                  >
+                    {c.name}
+                  </h3>
+                )}
                 <p style={{ fontSize: 13.5, fontWeight: 600, color: c.color, lineHeight: 1.4 }}>
                   {c.tagline}
                 </p>
               </div>
 
-              {/* Descrição */}
-              <p style={{ fontSize: 13.5, color: "#666", lineHeight: 1.7, flexGrow: 1 }}>
+              {/* Descrição — maior para Quick Solutions */}
+              <p style={{ fontSize: c.partner === "Quick Solutions AI" ? 15 : 13.5, color: "#666", lineHeight: 1.7, flexGrow: 1 }}>
                 {c.desc}
               </p>
 
@@ -261,75 +263,71 @@ export default function Cases() {
                 ))}
               </div>
 
-              {/* CTAs */}
-              <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-                <a
-                  href={c.cta.href}
-                  target={c.cta.href.startsWith("http") ? "_blank" : undefined}
-                  rel={c.cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 6,
-                    background: c.color,
-                    color: c.color === "#34d399" ? "#0a0a0a" : "#fff",
-                    padding: "10px 18px",
-                    borderRadius: 8,
-                    fontSize: 13,
-                    fontWeight: 700,
-                    textDecoration: "none",
-                    letterSpacing: "-0.01em",
-                    transition: "opacity 0.15s",
-                  }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.85")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "1")}
-                >
-                  {c.cta.label}
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                    <path d="M2.5 6.5h8M7 3l3.5 3.5L7 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </a>
-                {c.ctaSecondary && (
+              {/* CTAs — só mostra para B2Content */}
+              {c.partner === "B2Content" && (
+                <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
                   <a
-                    href={c.ctaSecondary.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={c.cta.href}
+                    target={c.cta.href.startsWith("http") ? "_blank" : undefined}
+                    rel={c.cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 6,
-                      background: "rgba(255,255,255,0.05)",
-                      color: "#aaa",
+                      background: c.color,
+                      color: c.color === "#34d399" ? "#0a0a0a" : "#fff",
                       padding: "10px 18px",
                       borderRadius: 8,
                       fontSize: 13,
-                      fontWeight: 600,
+                      fontWeight: 700,
                       textDecoration: "none",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      transition: "color 0.15s, border-color 0.15s",
+                      letterSpacing: "-0.01em",
+                      transition: "opacity 0.15s",
                     }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = "#f5f5f5";
-                      (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.16)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = "#aaa";
-                      (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)";
-                    }}
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.85")}
+                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "1")}
                   >
-                    {c.ctaSecondary.label}
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style={{ opacity: 0.5 }}>
-                      <path d="M1.5 9.5L9.5 1.5M9.5 1.5H5M9.5 1.5v4.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                    {c.cta.label}
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                      <path d="M2.5 6.5h8M7 3l3.5 3.5L7 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </a>
-                )}
-              </div>
-
-              {/* Assinatura parceiro */}
-              <div style={{ fontSize: 11, color: "#333", display: "flex", alignItems: "center", gap: 5 }}>
-                <span>Por</span>
-                <span style={{ color: "#444", fontWeight: 600 }}>{c.partner}</span>
-              </div>
+                  {c.ctaSecondary && (
+                    <a
+                      href={c.ctaSecondary.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 6,
+                        background: "rgba(255,255,255,0.05)",
+                        color: "#aaa",
+                        padding: "10px 18px",
+                        borderRadius: 8,
+                        fontSize: 13,
+                        fontWeight: 600,
+                        textDecoration: "none",
+                        border: "1px solid rgba(255,255,255,0.08)",
+                        transition: "color 0.15s, border-color 0.15s",
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLElement).style.color = "#f5f5f5";
+                        (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.16)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLElement).style.color = "#aaa";
+                        (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)";
+                      }}
+                    >
+                      {c.ctaSecondary.label}
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style={{ opacity: 0.5 }}>
+                        <path d="M1.5 9.5L9.5 1.5M9.5 1.5H5M9.5 1.5v4.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>
