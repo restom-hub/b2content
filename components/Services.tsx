@@ -99,7 +99,7 @@ export default function Services() {
           </div>
           <div style={{ paddingBottom: 4 }}>
             <p style={{ fontSize: 15, color: "#666", lineHeight: 1.7, maxWidth: 380 }}>
-              Não vendemos pacotes. Construímos uma operação de marketing que funciona enquanto você dorme — com processo, cadência e dados para provar cada centavo investido.
+              Nossas soluções são customizadas para as necessidades e processos de cada empresa. Totalmente personalizados. Os agentes são adaptados ao seu negócio, fluxos de trabalho, integrações e dados para garantir que operem no seu modelo.
             </p>
           </div>
         </div>
