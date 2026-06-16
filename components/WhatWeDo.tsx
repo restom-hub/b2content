@@ -1,6 +1,6 @@
 export default function WhatWeDo() {
   return (
-    <section style={{ padding: "120px 24px 64px", borderTop: "1px solid var(--border)" }}>
+    <section style={{ padding: "96px 24px 64px", marginTop: "48px", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 28, textTransform: "uppercase" }}>
           O que fazemos
