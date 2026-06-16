@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       style={{
-        padding: "88px 24px 0",
+        padding: "88px 24px 64px",
         position: "relative",
         overflow: "hidden",
       }}
