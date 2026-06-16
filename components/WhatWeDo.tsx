@@ -1,6 +1,6 @@
 export default function WhatWeDo() {
   return (
-    <section style={{ padding: "96px 24px 64px", marginTop: "48px", borderTop: "1px solid var(--border)", background: "#0f1419" }}>
+    <section style={{ padding: "96px 24px 64px", marginTop: "48px", borderTop: "1px solid var(--border)", background: "#0a0f18" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", marginBottom: 28, textTransform: "uppercase" }}>
           Nosso Modelo de Arquitetura
@@ -23,26 +23,25 @@ export default function WhatWeDo() {
           consistência.
         </h2>
 
-        <p
-          style={{
-            fontSize: 15,
-            color: "#666",
-            lineHeight: 1.7,
-            maxWidth: 800,
-            marginBottom: 48,
-          }}
-        >
-          Nossas soluções são customizadas para as necessidades e processos de cada empresa. Totalmente personalizados. Os agentes são adaptados ao seu negócio, fluxos de trabalho, integrações e dados para garantir que operem no seu modelo.
-        </p>
+        <div style={{ maxWidth: 800, marginBottom: 48 }}>
+          <p
+            style={{
+              fontSize: 15,
+              color: "#666",
+              lineHeight: 1.7,
+            }}
+          >
+            Nossas soluções são customizadas para as necessidades e processos de cada empresa. Totalmente personalizados. Os agentes são adaptados ao seu negócio, fluxos de trabalho, integrações e dados para garantir que operem no seu modelo.
+          </p>
+        </div>
 
-        {/* Imagem da arquitetura */}
-        <div style={{ marginTop: 48 }}>
+        {/* Imagem da arquitetura — centralizada */}
+        <div style={{ marginTop: 48, maxWidth: 800, margin: "48px auto 0" }}>
           <img
             src="/images/architecture.png"
             alt="Modelo de Arquitetura em Camadas"
             style={{
               width: "100%",
-              maxWidth: 900,
               height: "auto",
               borderRadius: 16,
               display: "block",
