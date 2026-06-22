@@ -20,8 +20,8 @@ const navItems = [
     label: "Projetos",
     href: "#cases",
     submenu: [
-      { label: "Automação de Processos com IA", desc: "Em parceria com Quick Solutions AI", href: "#automação", badge: "Parceria" },
-      { label: "Arquitetura de Dados de Marketing", desc: "Em parceria com Quick Solutions AI", href: "#automação", badge: "Parceria" },
+      { label: "Automação de Processos com IA", desc: "Orquestração inteligente de workflows", href: "#automação" },
+      { label: "Arquitetura de Dados de Marketing", desc: "Dados estruturados para decisões", href: "#automação" },
       { label: "Transformação Digital B2B", desc: "Modernização de presença digital", href: "#automação" },
       { label: "Cases de Resultado", desc: "Resultados reais de clientes reais", href: "#cases" },
     ],

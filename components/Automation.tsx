@@ -116,10 +116,6 @@ export default function Automation() {
             <span style={{ fontSize: 11, fontWeight: 700, color: "#34d399", letterSpacing: "0.12em", textTransform: "uppercase" }}>
               Automação com IA
             </span>
-            <span style={{ width: 1, height: 14, background: "rgba(52,211,153,0.3)" }} />
-            <span style={{ fontSize: 11, color: "#555", letterSpacing: "0.04em" }}>
-              em parceria com Quick Solutions AI
-            </span>
           </div>
 
           <h2
@@ -251,42 +247,6 @@ export default function Automation() {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Nota de parceria */}
-          <div
-            style={{
-              marginTop: 20,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-end",
-              gap: 8,
-            }}
-          >
-            <span style={{ fontSize: 12, color: "#444" }}>Segmentos e metodologia em parceria com</span>
-            <a
-              href="https://quicksolutions-ai.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontSize: 12,
-                fontWeight: 600,
-                color: "#34d399",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 4,
-                opacity: 0.8,
-                transition: "opacity 0.15s",
-              }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "1")}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.8")}
-            >
-              Quick Solutions AI
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                <path d="M1.5 8.5L8.5 1.5M8.5 1.5H4M8.5 1.5v4.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
           </div>
         </div>
       </div>

@@ -20,17 +20,7 @@ const footerNav = [
       { label: "Processo", href: "#processo" },
       { label: "Resultados", href: "#resultados" },
       { label: "Cases", href: "#cases" },
-      { label: "Parceiros", href: "#parceiros" },
       { label: "Automação com IA", href: "#automação" },
-    ],
-  },
-  {
-    title: "Parceiros",
-    links: [
-      { label: "Quick Solutions AI", href: "https://quicksolutions-ai.com", external: true },
-      { label: "IA Aplicada", href: "https://quicksolutions-ai.com", external: true },
-      { label: "Arquitetura de Dados", href: "https://quicksolutions-ai.com", external: true },
-      { label: "Transformação Digital", href: "https://quicksolutions-ai.com", external: true },
     ],
   },
 ];
