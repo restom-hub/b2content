@@ -3,33 +3,51 @@
 const steps = [
   {
     num: "1",
-    title: "Coleta de Dados",
-    desc: "Integramos suas fontes de dados (Google Analytics, Meta Ads, Google Ads) de forma segura para análise completa.",
+    title: "Entendimento do negócio, processos e gargalos",
+    desc: "Mapear o workflow real e documentar todos detalhes, identificar volume, gargalos, pontos de decisão, exceções e onde está a dor.",
     side: "left",
   },
   {
     num: "2",
-    title: "Processamento com IA",
-    desc: "Agentes de IA analisam bilhões de data points para identificar padrões, anomalias e oportunidades.",
+    title: "Decomposição e triagem (agente vs. não-agente)",
+    desc: "Quebrar o processo em tarefas específicas e classificar cada uma entre determinística, candidatas a agente ou que devem permanecer humano.",
     side: "right",
   },
   {
     num: "3",
-    title: "Validação Humana",
-    desc: "Nossos especialistas validam resultados, contextualizando insights com conhecimento de mercado.",
+    title: "Desenho da arquitetura de agentes e suas interações",
+    desc: "Definir a squad sob o princípio de responsabilidade única: que agentes existem, o que cada um faz, e o padrão de orquestração.",
     side: "left",
   },
   {
     num: "4",
-    title: "Relatório & Recomendações",
-    desc: "Entregamos relatórios executivos com recomendações claras e prioritárias para implementação.",
+    title: "Camada de ferramentas, dados e integrações",
+    desc: "Os agentes só são úteis pelo que conseguem fazer e acessar: APIs, bancos, RAG/retrieval, ações em sistemas externos. Definir contratos de I/O.",
     side: "right",
   },
   {
     num: "5",
-    title: "Monitoramento Contínuo",
-    desc: "Acompanhamento periódico de resultados e ajustes estratégicos conforme necessário.",
+    title: "Arquitetura de prompts e calibração",
+    desc: "System prompts, definição de papel, guardrails e critérios de calibração/rigor.",
     side: "left",
+  },
+  {
+    num: "6",
+    title: "Human-in-the-loop e governança",
+    desc: "Decidir onde entram aprovações, escalonamento e fallback.",
+    side: "right",
+  },
+  {
+    num: "7",
+    title: "Protótipo / PoC vertical",
+    desc: "Construir exemplo ponta a ponta com casos reais.",
+    side: "left",
+  },
+  {
+    num: "8",
+    title: "Deploy e integração na operação",
+    desc: "Embutir o sistema na operação real da organização. A agentização é um produto vivo, não um entregável único.",
+    side: "right",
   },
 ];
 

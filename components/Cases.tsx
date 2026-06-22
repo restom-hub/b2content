@@ -83,7 +83,7 @@ const cases = [
     ),
     name: "HiveGrowth",
     tagline: "Growth marketing orientado a dados para empresas em escala",
-    desc: "Operação completa de growth — da estratégia de conteúdo ao pipeline de receita. Com a B2Content, a HiveGrowth estruturou uma máquina de aquisição orgânica que combina SEO técnico, produção editorial e automação de distribuição.",
+    desc: "Operação completa de growth — da estratégia de conteúdo ao pipeline de receita.",
     features: [
       "Crescimento de 3.8× no tráfego orgânico em 11 meses",
       "Pipeline inbound de R$ 2.1M atribuído ao conteúdo",

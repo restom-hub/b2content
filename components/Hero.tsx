@@ -89,12 +89,25 @@ export default function Hero() {
             fontSize: "clamp(16px, 2vw, 20px)",
             color: "var(--muted)",
             lineHeight: 1.6,
-            marginBottom: 48,
+            marginBottom: 12,
             fontWeight: 400,
           }}
         >
           Automatizamos qualquer processo — de workflows internos a agentes de IA
           integrados aos seus sistemas. Qualquer segmento. Qualquer operação.
+        </p>
+
+        {/* Highlighted text */}
+        <p
+          style={{
+            fontSize: "clamp(16px, 2vw, 20px)",
+            color: "var(--accent)",
+            lineHeight: 1.6,
+            marginBottom: 48,
+            fontWeight: 500,
+          }}
+        >
+          Soluções 100% customizadas para nossos clientes.
         </p>
 
         {/* CTAs */}

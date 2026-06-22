@@ -233,31 +233,6 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-
-            <a
-              href="https://quicksolutions-ai.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 5,
-                color: "#888",
-                textDecoration: "none",
-                fontSize: 14,
-                fontWeight: 500,
-                padding: "8px 14px",
-                borderRadius: 8,
-                transition: "color 0.15s",
-              }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#34d399")}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#888")}
-            >
-              Parceiros
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style={{ opacity: 0.5 }}>
-                <path d="M2 9L9 2M9 2H4M9 2v5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
           </div>
 
           {/* Mobile hamburger */}
