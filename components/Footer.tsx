@@ -90,7 +90,7 @@ export default function Footer() {
                       onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#555")}
                     >
                       {link.label}
-                      {"external" in link && link.external && (
+                      {"external" in link && (link as any).external && (
                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style={{ opacity: 0.4 }}>
                           <path d="M1.5 8.5L8.5 1.5M8.5 1.5H4M8.5 1.5v4.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
