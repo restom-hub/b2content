@@ -22,7 +22,6 @@ const cases = [
     ],
     cta: { label: "Saiba mais", href: "https://quicksolutions-ai.com" },
     ctaSecondary: { label: "Acessar plataforma", href: "https://quicksolutions-ai.com" },
-    partner: "Quick Solutions AI",
   },
   {
     color: "#0EA5E9",
@@ -45,7 +44,6 @@ const cases = [
     ],
     cta: { label: "Saiba mais", href: "https://quicksolutions-ai.com" },
     ctaSecondary: { label: "Acessar plataforma", href: "https://quicksolutions-ai.com" },
-    partner: "Quick Solutions AI",
   },
   {
     color: "#D97706",
@@ -68,7 +66,6 @@ const cases = [
     ],
     cta: { label: "Saiba mais", href: "https://quicksolutions-ai.com" },
     ctaSecondary: { label: "Fale com especialista", href: "https://quicksolutions-ai.com" },
-    partner: "Quick Solutions AI",
   },
   {
     color: "#34d399",
@@ -224,8 +221,8 @@ export default function Cases() {
                 </p>
               </div>
 
-              {/* Descrição — maior para Quick Solutions */}
-              <p style={{ fontSize: c.partner === "Quick Solutions AI" ? 15 : 13.5, color: "#666", lineHeight: 1.7, flexGrow: 1 }}>
+              {/* Descrição */}
+              <p style={{ fontSize: 13.5, color: "#666", lineHeight: 1.7, flexGrow: 1 }}>
                 {c.desc}
               </p>
 
