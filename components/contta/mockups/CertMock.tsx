@@ -1,9 +1,11 @@
-/* Monitor de certificados digitais — vencidos / à vencer. */
+/* Recriação fiel do monitor de certificados do Contta·ai.
+   Vencidos / à vencer por cliente (o mesmo alerta que aparece no dashboard e na
+   lista de clientes). Dados fictícios. */
 export default function CertMock() {
   const rows = [
+    { n: "Transportes Léo", meta: "e-CNPJ A1 · venceu há 3 dias", state: "late", label: "Vencido" },
     { n: "Restom Engenharia LTDA", meta: "e-CNPJ A1 · vence em 8 dias", state: "warn", label: "À vencer" },
     { n: "Clínica Vitale ME", meta: "e-CNPJ A1 · vence em 62 dias", state: "ok", label: "Válido" },
-    { n: "Transportes Léo", meta: "e-CNPJ A1 · venceu há 3 dias", state: "late", label: "Vencido" },
     { n: "Padaria Aurora ME", meta: "e-CNPJ A1 · vence em 140 dias", state: "ok", label: "Válido" },
   ];
   const ic: Record<string, { bg: string; fg: string; d: string }> = {
@@ -15,9 +17,11 @@ export default function CertMock() {
     <div className="c-frame">
       <div className="c-frame-bar">
         <span className="d" /><span className="d" /><span className="d" />
-        <span className="url">app.<b>contta·ai</b>/certificados</span>
+        <span className="url">app.<b>contta·ai</b>/clientes · certificados</span>
       </div>
       <div className="c-cert">
+        <div style={{ fontSize: 13, fontWeight: 800, color: "#1c1a16", marginBottom: 2 }}>Certificados digitais</div>
+        <div style={{ fontSize: 10, color: "#6b6862", marginBottom: 14 }}>Monitorados em todos os clientes · aviso 30 dias antes</div>
         <div style={{ display: "flex", gap: 10, marginBottom: 14 }}>
           <div style={{ flex: 1, background: "#fff", border: "1px solid #e8e5dd", borderRadius: 10, padding: "11px 13px" }}>
             <div style={{ fontSize: 9.5, letterSpacing: ".05em", textTransform: "uppercase", color: "#b42318", fontWeight: 700 }}>Vencidos</div>
@@ -25,7 +29,7 @@ export default function CertMock() {
           </div>
           <div style={{ flex: 1, background: "#fff", border: "1px solid #e8e5dd", borderRadius: 10, padding: "11px 13px" }}>
             <div style={{ fontSize: 9.5, letterSpacing: ".05em", textTransform: "uppercase", color: "#a16207", fontWeight: 700 }}>À vencer (30d)</div>
-            <div style={{ fontSize: 22, fontWeight: 800, color: "#1c1a16" }}>1</div>
+            <div style={{ fontSize: 22, fontWeight: 800, color: "#1c1a16" }}>6</div>
           </div>
         </div>
         {rows.map((r) => {

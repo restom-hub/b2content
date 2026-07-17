@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import DocsMock from "./mockups/DocsMock";
-import WhatsAppMock from "./mockups/WhatsAppMock";
+import ConversasMock from "./mockups/ConversasMock";
 import ExecMock from "./mockups/ExecMock";
 import CertMock from "./mockups/CertMock";
 
@@ -71,11 +71,11 @@ export default function Features() {
           icon={<svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M4 2h5l3 3v9H4z" stroke="currentColor" strokeWidth="1.4"/><path d="M9 2v3h3M6 9h4M6 11h3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>}
           eyebrow="Documentos"
           title={<>Documentos que se<br />classificam sozinhos.</>}
-          body="Recebe XMLs e PDFs de todas as fontes, lê o conteúdo com IA e classifica por tipo, cliente e competência. Só o que a IA não tem certeza vai para revisão humana."
+          body="Recebe XMLs e PDFs de WhatsApp, e-mail e upload, lê o conteúdo com IA e classifica por cliente, obrigação e competência. Só o que precisa de olhar humano fica na fila de revisão."
           points={[
             "NF-e, NFS-e, CT-e, extratos e despesas reconhecidos automaticamente",
-            "Nível de confiança por documento — a IA propõe, você confirma",
-            "Zero digitação: o documento chega e já entra no processo certo",
+            "A IA sugere a obrigação e o cliente; você confirma numa revisão rápida",
+            "Uma fila só, de todas as origens — sem digitação e sem caixa de e-mail perdida",
           ]}
           media={<DocsMock />}
         />
@@ -83,15 +83,15 @@ export default function Features() {
         <FeatureRow
           reversed
           icon={<svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2 13l1-3a6 6 0 113 3l-4 0z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>}
-          eyebrow="Cobrança"
+          eyebrow="Solicitações · WhatsApp"
           title={<>Cobra o que falta,<br />no WhatsApp, sozinho.</>}
-          body="Sabe exatamente quais documentos faltam para fechar a competência de cada cliente — e cobra com educação e contexto pelo WhatsApp, sem você levantar o dedo."
+          body="Um inbox único para todo o WhatsApp do escritório. A IA atende no automático, cobra o documento que falta e sugere a resposta — o humano só revisa e envia."
           points={[
-            "Detecta a pendência e dispara a mensagem no tom do escritório",
+            "Atendimento automático que cobra a pendência no tom do escritório",
+            "Botão “Sugerir”: a IA redige a resposta; você aprova com um clique",
             "Recebe o arquivo de volta e já anexa ao processo do cliente",
-            "Você acompanha tudo por um inbox único, com histórico",
           ]}
-          media={<WhatsAppMock />}
+          media={<ConversasMock />}
         />
 
         <FeatureRow
