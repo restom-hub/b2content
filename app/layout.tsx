@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://b2content.com"),
   title: "B2Content — IA que opera. Processos que escalam.",
   description:
     "Automatizamos qualquer processo com IA — de workflows internos a agentes integrados aos seus sistemas. Qualquer segmento, qualquer operação.",
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
     siteName: "B2Content",
     locale: "pt_BR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
