@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // App "Radar B2Content" — atribui os insights de compartilhamento e remove
+  // o aviso de propriedade ausente no Sharing Debugger da Meta.
+  facebook: {
+    appId: "105504225388789",
+  },
 };
 
 export default function RootLayout({
