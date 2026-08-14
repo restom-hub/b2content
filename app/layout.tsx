@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   // App "Radar B2Content" — atribui os insights de compartilhamento e remove
   // o aviso de propriedade ausente no Sharing Debugger da Meta.
   facebook: {
-    appId: "105504225388789",
+    appId: "1055042253887897",
   },
 };
 
