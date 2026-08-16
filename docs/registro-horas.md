@@ -82,15 +82,18 @@ As três faixas cobrem tudo entre o primeiro commit e o fim do Jundo, sem buraco
 
 ## Mapa das contas
 
-São **três** owners no GitHub. Cuidado com a ambiguidade do nome `b2content`: ele é
-ao mesmo tempo uma **org** (`github.com/b2content`) e um **repositório** dentro do
-`restom-hub` (`github.com/restom-hub/b2content`). Coisas diferentes.
+São **três** owners no GitHub.
 
-| Owner | Repos | Acessível na sessão? |
+Até 15/08 o nome `b2content` era ambíguo: era ao mesmo tempo uma **org**
+(`github.com/b2content`) e um **repositório** dentro do `restom-hub`
+(`github.com/restom-hub/b2content`, o hotsite). Isso me fez afirmar errado, em
+15/08, que a org não existia. A migração da pendência 3 resolve a ambiguidade.
+
+| Owner | Repos | Acessível numa sessão iniciada do `restom-hub`? |
 |---|---|---|
-| `restom-hub` | 12 — b2content, alkhemylab, radar, radar-cnpj, design-system, picmatconlab, Contabilitta-bkp, 5× pautacerta | sim |
+| `restom-hub` | 12 — b2content (→ migrando para `b2content/hotsite`), alkhemylab, radar, radar-cnpj, design-system, picmatconlab, Contabilitta-bkp, 5× pautacerta | sim |
 | `MarceloSenai` | 6 — consultoria-protheus-omie, AstroERP, AceleraMatCon, hivegrowth-ai, obraxs-hotsite, pautacerta | sim |
-| `b2content` | jundo (pelo menos) | **não** — ver pendência 1 |
+| `b2content` | jundo, hotsite (após a migração) | **não** — ver pendências 1 e 3 |
 
 Identidade de commit única nos owners visíveis: `Carlos Restom <restom@gmail.com>`.
 No alkhemylab são 167 commits dele contra 220 de `Marcelo <soufrater@gmail.com>`.
@@ -112,8 +115,13 @@ O repo é `b2content/jundo`, no GitHub. Uma sessão iniciada a partir do
 - API do GitHub pelo proxy: `HTTP 403`, sessions are bound to their configured repositories
 - MCP do GitHub: acesso negado, só os repos configurados na sessão
 
-**Solução:** abrir uma sessão nova com `b2content/jundo` como source inicial. Lá o
-histórico fica acessível e os blocos saem de "relato" para "verificado".
+**Solução imediata:** abrir uma sessão nova com `b2content/jundo` como source
+inicial. Lá o histórico fica acessível e os blocos saem de "relato" para
+"verificado".
+
+**Depois da migração (pendência 3)** o problema some: hotsite e jundo passam a
+viver sob o mesmo owner, e uma única sessão iniciada em qualquer um dos dois
+alcança o outro via `add_repo`. Aí dá para apurar hotsite e Jundo de uma vez.
 
 ### 2. Relatório do Radar — não duplicar
 
@@ -127,3 +135,49 @@ está contabilizado no bloco da manhã acima. Se o relatório do Radar varrer po
 menção à palavra "Radar", esses dois commits vão aparecer de novo e inflar o total.
 
 Regra: atribuir hora por **repo onde o commit caiu**, não por palavra na mensagem.
+
+### 3. Migração: `restom-hub/b2content` → `b2content/hotsite`
+
+Decidido em 15/08. O repo é o hotsite da B2Content (o `package.json` já se chama
+`"hotsite"`, e a pasta local também) e vai para a org que é sua dona natural. Mata
+a ambiguidade do nome e coloca hotsite e jundo sob o mesmo owner.
+
+**O que foi verificado que NÃO quebra:** nenhuma referência ao repositório no
+código — as 12 menções a `b2content` são todas de domínio (`b2content.com`,
+`contta-ai.b2content.com`, e-mails). Sem workflow de CI, sem `vercel.json`, sem
+GitHub Pages, sem `CNAME` em `public/`. O `.claude/launch.json` aponta para caminho
+local, indiferente ao GitHub. Issues, PRs, commits e branches viajam com o repo, e
+o GitHub redireciona a URL antiga em web, clone HTTPS, SSH e API.
+
+**O que quebra e precisa de ação:**
+
+- **Conexão Git da Vercel** — o GitHub App da Vercel é instalado por conta/org, e a
+  instalação do `restom-hub` não acompanha o repo. Pushes param de disparar deploy
+  até religar. O site não cai: fica servindo o último build, e o domínio é
+  configuração do projeto na Vercel, não do repositório.
+  *(Hospedagem na Vercel é suposição — o proxy da sessão bloqueou saída para
+  `b2content.com` e não deu para confirmar. Verificar antes.)*
+- **GitHub App do Claude Code** — mesmo motivo. A org `b2content` precisa da
+  instalação para sessões futuras alcançarem o repo.
+- **Colaboradores** não viram membros de time da org automaticamente.
+
+**Passos:**
+
+1. Fechar PRs abertos antes — após a transferência a sessão atual perde acesso.
+2. Anotar a config da Vercel: nome do projeto, root directory, framework preset,
+   variáveis de ambiente e domínios ligados.
+3. Instalar o GitHub App da Vercel na org `b2content` **antes** da transferência,
+   para encurtar a janela sem deploy.
+4. `Settings → General → Danger Zone → Transfer ownership`, destino `b2content`,
+   já preenchendo `hotsite` no campo de nome — transferência e rename de uma vez.
+   Exige admin no repo e permissão de criar repos na org.
+5. Religar a Vercel em `Settings → Git`, apontando para `b2content/hotsite`.
+6. Testar com um push trivial e confirmar que o deploy dispara.
+7. Atualizar o remote local:
+   `git remote set-url origin https://github.com/b2content/hotsite`.
+
+**Armadilha do redirect:** ele quebra se alguém criar depois um repo novo chamado
+`b2content` dentro do `restom-hub`. Não reusar o nome.
+
+**Rollback:** transferir de volta pelo mesmo caminho, org → usuário. Nada é
+destrutivo.
