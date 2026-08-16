@@ -12,14 +12,29 @@ Todos os horários em **America/Sao_Paulo (UTC−03:00)**.
   o trabalho anterior ao primeiro commit nem o que não foi commitado. Todo bloco
   "verificado" é piso, não total.
 
-Commits feitos pelo Claude saem assinados com o nome do Carlos para bater com o
-histórico do repo, mas carregam `Co-Authored-By: Claude`. **Não contam como hora
-trabalhada.** Para excluí-los da contagem:
+### Commits do Claude: não existe filtro automático confiável
 
-```sh
-git log --all --invert-grep --grep="Co-Authored-By: Claude" \
-  --author="restom@gmail.com" --since="AAAA-MM-DD 00:00" --until="AAAA-MM-DD 23:59"
-```
+Alguns commits são feitos pelo Claude agindo sozinho, sem o Carlos trabalhando —
+esses não são hora trabalhada. Mas **não dá para separá-los por grep.**
+
+> ⚠️ **Não use `--grep="Co-Authored-By: Claude"` como filtro.** Esse trailer
+> significa "escrito com apoio do Claude Code", que é como o Carlos trabalha na
+> maior parte do tempo: **28 dos 35 commits** dele neste repo o carregam,
+> incluindo os três de 14/08 que formam o bloco verificado de 4h11m. Filtrar por
+> ele apagaria a manhã inteira de trabalho real.
+
+O trailer `Claude-Session:` é um indício melhor — hoje aparece em 1 commit de 35,
+só no que o Claude fez sozinho. Mas depende de configuração e pode passar a
+aparecer nos commits assistidos também. Serve como pista, não como regra.
+
+**A regra é manter a lista abaixo à mão.** Ao registrar um dia, conferir se algum
+commit dele cai na janela apurada.
+
+#### Commits a excluir da contagem
+
+| Commit | Data | Por quê |
+|---|---|---|
+| `e732b57` | 15/08 18:38 | squash do PR #1 — o próprio registro de horas, escrito pelo Claude |
 
 Onde procurar, sempre: os 12 repos do `restom-hub`, os 6 do `MarceloSenai` e o
 `b2content/jundo`. Filtrar candidatos por `pushed_at` da API antes de clonar —
@@ -43,9 +58,10 @@ Nada verificado no GitHub: zero commits do Carlos nos 18 repos de `restom-hub` e
 `b2content/jundo`, fora do alcance desta sessão.
 
 > **Atenção ao contar:** o único commit em `restom-hub/b2content` neste dia
-> (`8ff6384`, 18:38) foi feito pelo Claude, não pelo Carlos. Está assinado
-> `Carlos Restom <restom@gmail.com>` para bater com o histórico do repo, com
-> `Co-Authored-By` do Claude. **Não contabilizar como hora trabalhada.**
+> (`e732b57`, 18:38) foi feito pelo Claude, não pelo Carlos. Está assinado
+> `Carlos Restom <restom@gmail.com>` para bater com o histórico do repo.
+> **Não contabilizar como hora trabalhada** — ver a lista de exclusão nas
+> convenções.
 
 ---
 
