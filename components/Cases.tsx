@@ -12,13 +12,13 @@ const cases = [
         <path d="M11 14v5M8 17h6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
       </svg>
     ),
-    name: "IdeiaEstruturada",
-    tagline: "Transforme ideias em projetos de software",
-    desc: "Plataforma que usa Inteligência Artificial para conduzir um discovery inteligente e transformar ideias de software em escopos técnicos estruturados, prontos para desenvolvimento. Em vez de semanas de reuniões, você obtém clareza em poucas horas.",
+    name: "Contabilitta",
+    tagline: "Contabilitta — menos rotina manual, mais assessoria",
+    desc: "A Contabilitta usa Inteligência Artificial para eliminar o trabalho repetitivo da contabilidade: documentos que chegam soltos viram dados organizados, prazos deixam de depender da memória de alguém e o cliente é atendido direto pelo WhatsApp. Sua equipe sai da digitação e volta a fazer o que gera valor.",
     features: [
-      "Discovery guiado por IA",
-      "Escopo técnico automático",
-      "Identificação de módulos, regras e fluxos",
+      "Documentos organizados automaticamente",
+      "Alertas de vencimentos e obrigações",
+      "Atendimento ao cliente via WhatsApp",
     ],
     cta: { label: "Saiba mais", href: "https://quicksolutions-ai.com" },
     ctaSecondary: { label: "Acessar plataforma", href: "https://quicksolutions-ai.com" },
@@ -71,7 +71,7 @@ const cases = [
     color: "#34d399",
     colorDim: "rgba(52,211,153,0.08)",
     colorBorder: "rgba(52,211,153,0.2)",
-    badge: "Parceria B2Content",
+    badge: null,
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
         <path d="M3 17l4-8 3 5 2-3 5 6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -188,6 +188,7 @@ export default function Cases() {
                 >
                   {c.icon}
                 </div>
+                {c.badge && (
                 <div
                   style={{
                     display: "inline-flex",
@@ -212,6 +213,7 @@ export default function Cases() {
                     {c.badge}
                   </span>
                 </div>
+                )}
               </div>
 
               {/* Tagline apenas */}

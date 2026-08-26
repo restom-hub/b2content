@@ -18,7 +18,6 @@ const footerNav = [
     title: "Empresa",
     links: [
       { label: "Processo", href: "#processo" },
-      { label: "Resultados", href: "#resultados" },
       { label: "Cases", href: "#cases" },
       { label: "Automação com IA", href: "#automação" },
     ],

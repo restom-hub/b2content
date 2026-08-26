@@ -27,7 +27,6 @@ const navItems = [
     ],
   },
   { label: "Processo", href: "#processo" },
-  { label: "Resultados", href: "#resultados" },
 ];
 
 type SubmenuItem = {
