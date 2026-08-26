@@ -20,8 +20,8 @@ const cases = [
       "Alertas de vencimentos e obrigações",
       "Atendimento ao cliente via WhatsApp",
     ],
-    cta: { label: "Saiba mais", href: "https://quicksolutions-ai.com" },
-    ctaSecondary: { label: "Acessar plataforma", href: "https://quicksolutions-ai.com" },
+    cta: { label: "Saiba mais", href: "https://contabilitta.com" },
+    ctaSecondary: { label: "Acessar plataforma", href: "https://contabilitta.com" },
   },
   {
     color: "#0EA5E9",
